@@ -1,22 +1,21 @@
-//array
-numbers = [1,4,9,16,25];
+//modify button elements 
 
-//function
-function squareNumber(num) {
-    return num * num;
-};
+//add button to challenge
+$("#Challenge").append("<button id='button-Challenge'>Make Special</button>"); 
+$("button-Challenge").click(function(){
+    $("#Challenge").toggleClass("special");
+});
 
-const squaredNumbers = numbers.map(squareNumber);
 
-console.log(squaredNumbers);
+//add button to Problems
+$("#Problems").append("<button id='button-problems'>Make Special</button>"); 
+$("button-Problems").click(function(){ 
+    $("#Problems").toggleClass("special");
+});
 
- // Your map results data
- const mapResults = squaredNumbers.join(", ");
- 
+//add button to reflection 
+$("#Reflection").append("<button id='button-Reflection'>Make Special</button>"); 
+$("button-Reflection").click(function(){ 
+    $("#Reflection").toggleClass("special");
+}); 
 
- 
- // Use jQuery to select the element by its ID and set the HTML content
- $("#output").html(mapResults);
-
- console.log(mapResults);
- 
