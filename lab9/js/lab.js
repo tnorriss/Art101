@@ -1,21 +1,30 @@
-//modify button elements 
+$(document).ready(function() {
+    // Append button to challenge section
+    $('#Challenge').append('<button id="ChallengeButton">Click me!</button>');
+  
+    // Append button to problems section
+    $('#Problems').append('<button id="ProblemsButton">Click me!</button>');
 
-//add button to challenge
-$("#Challenge").append("<button id='button-Challenge'>Make Special</button>"); 
-$("button-Challenge").click(function(){
-    $("#Challenge").toggleClass("special");
-});
+    //Append button to reflection section
+    $('#Reflection').append('<button id="ReflectionButton">Click me!</button>');
+
+    //Append button to results section
+    $('#Results').append('<button id="ResultsButton">Click me!</button>');
 
 
-//add button to Problems
-$("#Problems").append("<button id='button-problems'>Make Special</button>"); 
-$("button-Problems").click(function(){ 
-    $("#Problems").toggleClass("special");
-});
+//Button event handlers
+    $('#ChallengeButton').click(function() {
+        alert('You clicked the challenge button!');
+    });
 
-//add button to reflection 
-$("#Reflection").append("<button id='button-Reflection'>Make Special</button>"); 
-$("button-Reflection").click(function(){ 
-    $("#Reflection").toggleClass("special");
+    $('#ProblemsButton').click(function() {
+        alert('You clicked the problems button!');
+    });
+
+    $('#ResultsButton').click(function() {
+        alert('You clicked the results button!');
+    });
+    $('#ReflectionButton').click(function() {
+        alert('You clicked the reflection button!'); 
+    });
 }); 
-
