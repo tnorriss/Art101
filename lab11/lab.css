@@ -11,27 +11,3 @@
   }
 
 
-  #output {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.text {
-    max-width: 60%;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px 0;
-}
-
-.text:nth-child(odd) {
-    align-self: flex-start;
-    background-color: #0bc772; /* Light green background for odd messages */
-    margin-left: 20px;
-}
-
-.text:nth-child(even) {
-    align-self: flex-end;
-    background-color: #f8d7da; /* Light red background for even messages */
-    margin-right: 20px;
-}  
